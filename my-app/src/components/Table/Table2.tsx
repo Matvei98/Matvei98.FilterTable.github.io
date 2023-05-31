@@ -4,7 +4,7 @@ import { Button, Input, Space, Table ,Select} from "antd";
 import { useRef, useState } from "react";
 import Highlighter from "react-highlight-words";
 import Users from './Users.json';
-const red = Users;
+const listUsers= Users;
 
 
 export const Table2 = () => {
@@ -254,7 +254,7 @@ const getColumnSearchProps = (dataIndex) => ({
 	];
   return (	
     <>
- <Table columns={columns} dataSource={red}/>;
+ <Table columns={columns} dataSource={listUsers}/>;
     </>
   )
 };
